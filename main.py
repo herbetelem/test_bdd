@@ -25,25 +25,25 @@ cursor = connection.cursor()
 # # ! -----------------------------------------------------------------------------------------------------------------------------------------
 # # ! je demande quel noms je dois chercher dans la bdd, et comme le format doit etre un tuple je la formate pour correspondre a ce format
 # my_name = (input("qui recherchez vous : "),)
-# cursor.execute('SELECT * FROM via_promo WHERE promo_name = ?', my_name)
+# cursor.execute('SELECT * FROM via_promo WHERE name = ?', my_name)
 
 # # ! je recupere au format de une seul ligne le nom trouvé
-# result = cursor.fetchone()[1]
+# result = cursor.fetchone()
 
 # print("Select UNE personne :")
-# print(f"la personne {result} est bien dans la bdd")
+# print(f"la personne {result[1]} est bien dans la bdd et il a {result[2]}")
 # # ! -----------------------------------------------------------------------------------------------------------------------------------------
 
 # # ! READ MULTI LINE << à decommenter pour tester >>
 # # ! -----------------------------------------------------------------------------------------------------------------------------------------
 # # ! je créer la requette qui vas recuperer uniquement les noms depuis la table via_promo car je ne selectionne pas * (* = all)
-# cursor.execute('SELECT name FROM via_promo')
+# cursor.execute('SELECT * FROM via_promo')
 
 # result = cursor.fetchall()
 
 # print("Select PLUSIEURS personnes :")
 # for user in result:
-#     print(f"la personne {user[0]} est bien dans la bdd")
+#     print(f"la personne {user[1]} est bien dans la bdd sa position dans la liste est de {user[0]}")
 # # ! -----------------------------------------------------------------------------------------------------------------------------------------
 
 
