@@ -52,8 +52,8 @@ cursor = connection.cursor()
 # # ! -----------------------------------------------------------------------------------------------------------------------------------------
 # # ! je créer la requette qui vas update une colonne d'une ligne specifique
 # # ! je commence par demander qui update et quoi update
-# update_name = input("qui souhaitez vous update")
-# update_age = int(input("nouvel age ?"))
+# update_name = input("qui souhaitez vous update : ")
+# update_age = int(input("nouvel age ? "))
 # update_user = (update_age, update_name)
 # # ! je créer la requete d'update
 # cursor.execute('UPDATE via_promo SET age = ? WHERE name = ?', update_user)
