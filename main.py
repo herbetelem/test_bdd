@@ -3,9 +3,9 @@
 # import de la librairie que vas gerer le sql
 import sqlite3
 
-# ! Connection a la bdd
+# ! Connection a la bdd le lien de la bdd en local
 connection = sqlite3.connect("via_promo.db")
-# ! instance du curseur
+# ! instance du curseur qui vas etre le resultat de nosq recherche
 cursor = connection.cursor()
 
 # # ! CREATE << a decommenter pour tester >>
