@@ -21,6 +21,7 @@ cursor = connection.cursor()
 # # ! -----------------------------------------------------------------------------------------------------------------------------------------
 
 
+
 # # ! READ ONE LINE << à decommenter pour tester >>
 # # ! -----------------------------------------------------------------------------------------------------------------------------------------
 # # ! je demande quel noms je dois chercher dans la bdd, et comme le format doit etre un tuple je la formate pour correspondre a ce format
@@ -29,7 +30,7 @@ cursor = connection.cursor()
 
 # # ! je recupere au format de une seul ligne le nom trouvé
 # result = cursor.fetchone()
-
+# print(result)
 # print("Select UNE personne :")
 # print(f"la personne {result[1]} est bien dans la bdd et il a {result[2]}")
 # # ! -----------------------------------------------------------------------------------------------------------------------------------------
@@ -40,7 +41,7 @@ cursor = connection.cursor()
 # cursor.execute('SELECT * FROM via_promo')
 
 # result = cursor.fetchall()
-
+# print(result)
 # print("Select PLUSIEURS personnes :")
 # for user in result:
 #     print(f"la personne {user[1]} est bien dans la bdd sa position dans la liste est de {user[0]}")
